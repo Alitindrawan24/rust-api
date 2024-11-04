@@ -1,0 +1,29 @@
+### Get list of all tasks
+GET http://localhost:7878/api/tasks
+Accept: application/json
+
+### Get detail of a task
+GET http://localhost:7878/api/tasks/1
+Accept: application/json
+
+### Post a new task
+POST http://localhost:7878/api/tasks
+Content-Type: application/json
+
+{
+    "name":"new tasks",
+    "priority":1
+}
+
+### Delete a task
+DELETE http://localhost:7878/api/tasks/1
+Accept: application/json
+
+### Update a task
+PATCH  http://localhost:7878/api/tasks/1
+Content-Type: application/json
+
+{
+    "name":"tasks updated",
+    "priority":1
+}
